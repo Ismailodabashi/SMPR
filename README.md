@@ -106,7 +106,9 @@ Loo <- function(k,xl)
 
 Для нашей задачи оптимально k=6, при этом значении алгоритм LOO показывает минимальное колтчество ошибок, по сравнению с другими значениями k.
 
-![количество ошибок](https://github.com/Ismailodabashi/SMPR/blob/master/LOO.jpg)
+![](https://github.com/Ismailodabashi/SMPR/blob/master/LOO.jpg)
+
+![](https://github.com/Ismailodabashi/SMPR/blob/master/Loo%20l.png)
 
 
 
