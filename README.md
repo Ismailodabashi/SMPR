@@ -108,7 +108,7 @@ Loo <- function(k,xl)
 
 ![](https://github.com/Ismailodabashi/SMPR/blob/master/LOO.jpg)
 
-![](https://github.com/Ismailodabashi/SMPR/blob/master/Loo%20l.png)
+![](https://github.com/Ismailodabashi/SMPR/blob/master/График%20зависимости%20LOO(k).png)
 
 
 
