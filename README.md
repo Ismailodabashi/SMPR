@@ -41,9 +41,10 @@ kNN <- function(xl, z, k)
 } 
 ```
 
-Например для k=3 классифицируем объект с координатами (2.5, 1.5).
-
-![](https://github.com/Ismailodabashi/SMPR/blob/master/k%3D3.png)
+  <p>
+    <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Карта%20Классификации%201NN.png"  width="430" height="310">
+    <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Карта%20классификации%206NN.png"  width="430" height="310">
+  </p>
 
 ### Преимущества:
 1. Простота реализации.
