@@ -216,3 +216,24 @@ PW <- function(xl, z, h)
     <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Loo%20Гауссовское.png"  width="285" height="200">
     <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Loo%20Квадратное.png"  width="285" height="200">
   </p>
+  
+<table border="1">
+<tr>
+	<td>Ядро</td>
+	<td>Епачникова</td>
+	<td>Гаусовское</td>
+	<td>Квадратное</td>
+	</tr>
+<tr>
+	<td>Оптимальное значение ширины окна (h)</td>
+	<td>0.4</td>
+	<td>0.4</td>
+	<td>0.4</td>
+	</tr>
+<tr>
+	<td>LOO</td>
+	<td>0.04</td>
+	<td>0.04</td>
+	<td>0.04</td>
+	</tr>
+</table> 
