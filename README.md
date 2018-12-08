@@ -278,11 +278,9 @@ PW <- function(xl, z, h)
 
 Подстановочный алгоритм относится к нормальному дискриминантному анализу.
 
-Для реализации алгоритма была взята часть выборки ирисов фишера по двум признакам. 
-
 ![](http://latex.codecogs.com/svg.latex?%5Chat%7B%5Cmu%7D%20%3D%20%5Cfrac%7B1%7D%7Bl_y%7D%20%24%24%5Csum_%7Bi%20%3D%201%7D%5E%7Bl_y%7D%20x_i%24%24)
 
-```
+``` R
 Mu = function(points) {
     rows = dim(points)[1]
     cols = dim(points)[2]
@@ -296,7 +294,7 @@ Mu = function(points) {
 
 ![](http://latex.codecogs.com/svg.latex?%5Chat%7B%5CSigma%7D%20%3D%20%5Cfrac%7B1%7D%7Bl_y%20-%201%7D%20%24%24%5Csum_%7Bi%20%3D%201%7D%5E%7Bl_y%7D%20%28x_i%20-%20%5Chat%7B%5Cmu%7D%29%28x_i%20-%20%5Chat%7B%5Cmu%7D%29%5ET).
 
-```
+``` R
 CovarianceMatrix = function(points, mu) {
     rows = dim(points)[1]
     cols = dim(points)[2]
@@ -307,9 +305,12 @@ CovarianceMatrix = function(points, mu) {
     return(covar)
 }
 ```
-В результате мы получили разделяющую поверхность в форме параболы.
 
-![](https://github.com/Ismailodabashi/SMPR/blob/master/Plug-in.png)
+<p>
+    <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Разделяющая%20кривая%20-%20гипербола.png"  width="285" height="200">
+    <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Разделяющая%20кривая%20-%20парабола.png"  width="285" height="200">
+    <img src="https://github.com/Ismailodabashi/SMPR/blob/master/Разделяющая%20кривая%20эллипс.png"  width="285" height="200">
+  </p>
 
 Недостатки:
 - Если длина выборки меньше размерности пространства, то матрица становится вырожденно. В этом случае обратная матрица не существует и метод вообще не применим.
@@ -317,6 +318,8 @@ CovarianceMatrix = function(points, mu) {
 ## Линейный дискриминант Фишера
 
 __ЛДФ__ основан на __подстановочном алгоритме__ с предположением, что ковариационные матрицы классов равны. Отсюда следует, что разделяющая поверхность вырождается в прямую. Это условие в __plug-in__ не выполнялось, так как разделяющая поверхность все равно была квадратичной (хоть и приближенной к прямой). Отсюда следует, что __ЛДФ__ должен иметь более высокое качество классификации при одинаковых ковариационных матрицах.
+
+Для реализации алгоритма была взята часть выборки ирисов фишера по двум признакам. 
 
 ![](https://github.com/Ismailodabashi/SMPR/blob/master/Линейный%20дискриминант%20Фишера.png)
 
