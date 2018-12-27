@@ -47,10 +47,6 @@ PlugInCoeffs = function(mu1, sigma1, mu2, sigma2) {
   class1 <- mvrnorm(n=150,c(3,0), sigma1)
   class2 <- mvrnorm(n=200,c(5,0), sigma2)
   
-  data = generateData()
-  class1=data$class1
-  class2=data$class2
-  
   drawPoints(class1, class2)
 
   m1 = Mu(class1)
